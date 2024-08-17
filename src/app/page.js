@@ -21,7 +21,7 @@ const Page = () => {
   const FetchAPI = async () => {
     const newdata = new URLSearchParams({
       url: data['link'],
-      alias: 'lolakash',
+      alias: data['alias'],
       // password: 'NodeIsCool@Example2',
       // 'max-clicks': '200'
     });
@@ -42,7 +42,7 @@ const Page = () => {
         })
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   }
 
